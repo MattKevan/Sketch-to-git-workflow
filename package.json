@@ -1,0 +1,26 @@
+{
+  "name": "kactus-git-workflow",
+  "version": "1.0.0",
+  "description": "Use Sketch as part of a true git design workflow",
+  "config": {
+    "filename": "yourprojectname"
+  },
+  "watch": {
+    "sketchToKactus": "*.sketch"
+  },
+  "scripts": {
+    "start": "npm install && npm run watch",
+    "sketchToKactus": "kactus parse $npm_package_config_filename.sketch",
+    "kactusToSketch": "kactus import $npm_package_config_filename",
+    "watch": "nodemon -e sketch -x \"npm run sketchToKactus\"",
+    "new": "kactus createNew $npm_package_config_filename"
+  },
+  "author": "Thinkbright",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "kactus-cli": "^0.1.13",
+    "nodemon": "^1.11.0",
+    "shared-git-hooks": "^1.2.1"
+  }
+}
