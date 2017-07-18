@@ -2,6 +2,11 @@
 
 This is a helper repository to use Sketch and `kactus-cli` as part of a true git workflow, no need for the Kactus app. If you’re a designer with development skills you’ll feel right at home.
 
+## Requirements
+
+* Sketch 44+
+* [🌵 Kactus](https://github.com/kactus-io/kactus) (Only the Kactus Sketch plugin is required)
+
 ## Installation
 
 * Run `npm install`
@@ -22,9 +27,11 @@ If you've cloned this repository then you should reinitialise your git repo.
 * ...
 * Profit!
 
-## About this repository
+## About this project
 
-We love the steps tools like Kactus and Abstract are taking to integrate design and development workflows. But as design and development nerds, we don't like arbritary limitations in the form of having to use yet another platform or being forced to use a certain service. We are used to using git in the command line and we would like to use the workflow we're accustomed to for design projects.
+We love the steps tools like Kactus and Abstract are taking to integrate design and development workflows. But as design and development nerds, we value the freedom to choose and manage our design workflow. We’re much faster with the command line instead of a seperate app and we don’t want to be tied by a specific online platform or git hosting service.
+
+Kactus is a great step forward and the first time we can truly version control our Sketch files. This project aims to integrate a design workflow that mimics the development command line workflow we are used to. Watching files, auto reloading and automation where possible.
 
 ## Acknowledgements
 
