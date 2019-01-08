@@ -39,7 +39,7 @@ If you run `npm start` in a freshly cloned project folder the script will fail a
 
 ### Warning
 
-Conflicts are a nightmare to sort out manually, so I'd reccommend using the [Kactus](https://kactus.io) client to do this as it has a nice visual inspector.
+Conflicts are a nightmare to sort out manually, so I'd recommend using the [Kactus](https://kactus.io) client for this as it has a nice visual inspector.
 
 ## About this project
 
