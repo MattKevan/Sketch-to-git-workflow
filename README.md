@@ -1,8 +1,8 @@
 # Sketch to Git workflow
 
-This is a helper repository to use Sketch as part of a true git version control workflow. If you’re a designer with development skills you’ll feel right at home.
+This is a set of helper scripts to use Sketch as part of a true git version control workflow. If you’re a designer with development skills you’ll feel right at home.
 
-The script works by decomposing a Sketch file into its constituent components, mostly JSON files and images, so that it can be better uploaded to and managed by Git. Otherwise it'd just be a big binary blob. This happens automatically whenever the Sketch file you're working on is saved. When you pull any changes, a hook is run to reconstitute all the bits back to a Sketch-readable file.
+It works by decomposing a Sketch file into its constituent components, mostly JSON files and images, so that it can be better uploaded to and managed by Git. Otherwise it'd just be a big binary blob. This happens automatically whenever the Sketch file you're working on is saved. When you pull any changes, a hook is run to reconstitute all the bits back to a Sketch-readable file.
 
 ## Requirements
 
