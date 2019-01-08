@@ -1,6 +1,6 @@
 # Sketch to Git workflow
 
-This enables you to use Sketch as part of a true version-controlled workflow. If you’re a designer with development skills you’ll feel right at home.
+This tool enables you to use Sketch as part of a true version-controlled workflow. If you’re a designer with development skills you’ll feel right at home.
 
 It works by exporting a Sketch file into its constituent components whenever you hit save, mostly JSON files and images, so that it can be better uploaded to and managed by Git. Otherwise it'd just be a big blob of binary.
 
@@ -44,7 +44,7 @@ If you run `npm start` in a freshly cloned project folder the script will fail a
 
 ### Warning
 
-Conflicts are a nightmare to sort out manually, so I'd recommend using the [Kactus](https://kactus.io) client for this as it has a nice visual inspector. There's no reason why, if you're using this script, you can't use the Kactus client as well as they both use the same tools under the hood.
+Conflicts are a nightmare to sort out manually, so I'd recommend using the [Kactus](https://kactus.io) client for this as it has a nice visual inspector. There's no reason why you can't use the Kactus client as well as this as they both use the same tools under the hood.
 
 ## Acknowledgements
 
