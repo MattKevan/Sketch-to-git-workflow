@@ -1,8 +1,10 @@
 # Sketch to Git workflow
 
-This is a set of helper scripts to use Sketch as part of a true git version control workflow. If you’re a designer with development skills you’ll feel right at home.
+This enables you to use Sketch as part of a true version-controlled workflow. If you’re a designer with development skills you’ll feel right at home.
 
-It works by decomposing a Sketch file into its constituent components, mostly JSON files and images, so that it can be better uploaded to and managed by Git. Otherwise it'd just be a big binary blob. This happens automatically whenever the Sketch file you're working on is saved. When you pull any changes, a hook is run to reconstitute all the bits back to a Sketch-readable file.
+It works by exporting a Sketch file into its constituent components whenever you hit save, mostly JSON files and images, so that it can be better uploaded to and managed by Git. Otherwise it'd just be a big blob of binary.
+
+The script watches your project folder and exports your Sketch file whenever you hit save. When you pull any changes, a hook is fired to put all the bits back together again, incorporating your latest changes.
 
 ## Requirements
 
@@ -11,8 +13,9 @@ It works by decomposing a Sketch file into its constituent components, mostly JS
 
 ## Installation
 
-* Clone or download this repository
-* cd into your project folder
+* Clone or download this repository.
+* Rename it to that of your project.
+* cd into your project folder.
 * Run `npm install`.
 * To create a new Sketch file, set your `filename` in the `package.json` to what you want to call it (default is `yourprojectname`). Then run `npm run new`.
 * If you have an existing Sketch file, move it to the project folder and update `package.json` to match.
@@ -27,23 +30,21 @@ If you've cloned this repository, you should reinitialise your git repo.
 
 ## Usage
 
-### Committing and pushing
-
 * cd into your project folder
 * Run `npm start`
 * Design, commit and push some new stuff.
 
-### Cloning
+### Pulling
 
-If you run `npm start` in a freshly cloned project folder the script will fail as the Sketch file hasn't been reconstitued yet. You'll need to pull another change from the repo to force the post-checkout hook to run, or run the command manually with `npm run updateSketchFile`.
+Close your Sketch file before pulling any changes. It may confuse things if the file is still open.
+
+### Cloning an existing project
+
+If you run `npm start` in a freshly cloned project folder the script will fail as the Sketch file hasn't yet been reconstitued. You'll need to pull another commit from the repo to force the post-checkout hook to fire, or run the command manually with `npm run updateSketchFile`.
 
 ### Warning
 
-Conflicts are a nightmare to sort out manually, so I'd recommend using the [Kactus](https://kactus.io) client for this as it has a nice visual inspector. There's no reason why, if you're using this script, you can't also use the Kactus client.
-
-## About this project
-
-This project is a modified version of Thinkshout's Kactus Git Workflow, improving the documentation. 
+Conflicts are a nightmare to sort out manually, so I'd recommend using the [Kactus](https://kactus.io) client for this as it has a nice visual inspector. There's no reason why, if you're using this script, you can't use the Kactus client as well as they both use the same tools under the hood.
 
 ## Acknowledgements
 
