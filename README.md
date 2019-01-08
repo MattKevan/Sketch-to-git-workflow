@@ -39,7 +39,7 @@ If you run `npm start` in a freshly cloned project folder the script will fail a
 
 ### Warning
 
-Conflicts are a nightmare to sort out manually, so I'd recommend using the [Kactus](https://kactus.io) client for this as it has a nice visual inspector.
+Conflicts are a nightmare to sort out manually, so I'd recommend using the [Kactus](https://kactus.io) client for this as it has a nice visual inspector. There's no reason why, if you're using this script, you can't also use the Kactus client.
 
 ## About this project
 
@@ -47,5 +47,5 @@ This project is a modified version of Thinkshout's Kactus Git Workflow, improvin
 
 ## Acknowledgements
 
-[Kactus CLI](https://github.com/kactus-io/kactus-cli)
-[Kactus Git Workflow](https://github.com/thinkbright/kactus-git-workflow)
+* [Kactus CLI](https://github.com/kactus-io/kactus-cli)
+* [Kactus Git Workflow](https://github.com/thinkbright/kactus-git-workflow)
