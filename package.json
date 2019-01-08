@@ -1,5 +1,5 @@
 {
-  "name": "kactus-git-workflow",
+  "name": "sketch-to-git-workflow",
   "version": "1.0.0",
   "description": "Use Sketch as part of a true git design workflow",
   "config": {
