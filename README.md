@@ -1,4 +1,4 @@
-# Sketch Git Workflow
+# Sketch to Git workflow
 
 This is a helper repository to use Sketch as part of a true git version control workflow. If you’re a designer with development skills you’ll feel right at home.
 
