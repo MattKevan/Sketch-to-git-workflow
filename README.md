@@ -17,8 +17,8 @@ The script watches your project folder and exports your Sketch file whenever you
 * Rename it to that of your project.
 * cd into your project folder.
 * Run `npm install`.
-* To create a new Sketch file, set your `filename` in the `package.json` to what you want to call it (default is `yourprojectname`). Then run `npm run new`.
-* If you have an existing Sketch file, move it to the project folder and update `package.json` to match.
+* To create a new Sketch file, set your `filename` in the `package.json` to what you want to call it (default is `yourprojectname`), then run `npm run new`.
+* If you have an existing Sketch file, move it to the project folder and update `filename` in `package.json` to match.
 
 ### Setup git
 
